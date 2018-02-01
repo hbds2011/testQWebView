@@ -1,0 +1,256 @@
+#DVR0504main {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:482px;
+	height:480px;
+	color:#FFFFFF;
+	background-color:#000033; /*透過色*/
+
+}
+#WhollyBackground {
+	position:absolute;
+	left:0px;
+	top:-1px;
+	width:482px;
+	height:480px;
+	background-color:#000033; /*透過色*/
+
+}
+#C-Mainbody {
+	overflow:hidden;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:482px;
+	height:480px;
+	/*background-color:#506473;*/
+	/*background-color:#9CF;*/
+	/*display:none;*/
+}
+#DVR0504ErrorMenu {
+	position:absolute;
+	top:5px;
+	width:385px;
+	height:425px;
+	color:#FFFFFF;
+	background-color:#333333;
+	/*left:3px;*/
+	/*top:30px;*/
+	/*width:280px;*/
+	/*background-color:#9CF;*/
+}
+#DVR0504title {
+	/*width:250px;*/
+	width:416px;
+	height:20px;
+	text-align:center;
+	margin-top:3px;
+	color:#FFFFFF;
+	font-family:"RgPHeiseiMG-W4";
+	font-size: 12px;
+	padding-top:3px;
+}
+.DVR0504ErrContent {
+	width:361px;
+	height:333px;
+	text-align: center;
+	color:#FFFFFF;
+	overflow: auto;
+	margin-top:2px;
+	margin-left:12px;
+	padding-top:3px;
+	background-color:#506473;
+	/*width:280px;*/
+}
+
+.DVR0504newBtn {
+	width:350px;
+	height:35px;
+	border:solid 0px ;
+	padding-left:9px;
+	color:#FFFFFF;
+	margin-top:3px ;
+	margin-bottom:3px;
+	font-size:12px;
+	border:solid 1px #FFFFFF;
+	background-color:#506473;
+	/*width:240px;*/
+	/*background-color:#9cf;*/
+	/*-webkit-border-radius:2px;*/
+	/*-moz-border-radius:2px;*/
+}
+.DVR0504newErrBtn {
+	width:350px;
+	height:35px;
+	border:solid 0px;
+	padding-left:9px;
+	color:#FFFFFF;
+	margin-top:3px ;
+	margin-bottom:3px;
+	font-size:12px;
+	border:solid 1px #F00;
+	background-color:#506473;
+	/*width:240px;*/
+	/*background-color:#9cf;*/
+	/*-webkit-border-radius:3px;*/
+	/*-moz-border-radius:3px;*/
+}
+
+.DVR0504upBtn{
+	width:115px;
+	font-family:"RgPHeiseiMG-W4";
+	font-size: 12px;
+	margin-left: 1px;	/*djwan @20110512 NVRD-0368_SC_NVR_0414*/
+	padding:0px;
+	height:22px;
+	font-weight:200;
+	display:block;
+}
+.DVR0504downBtn{
+	width:115px;
+	font-family:"RgPHeiseiMG-W4";
+	font-size: 12px;
+	margin-left: 124px;/*djwan @20110512 NVRD-0368_SC_NVR_0414*/
+	margin-top: -22px;
+	padding:0px;
+	height:22px;
+	font-weight:200;
+	display:block;
+}
+
+
+.DVR0504controlBtn{
+	width:115px;
+	font-family:"RgPHeiseiMG-W4";
+	font-size: 12px;
+	margin-left: 247px;/*djwan @20110512 NVRD-0368_SC_NVR_0414*/
+	margin-top: -22px;
+	padding:0px;
+	height:22px;
+	font-weight:200;
+	display:block;
+}
+
+.DVR0504_div_upBtn{
+	position:relative;
+	top: 10px;
+	left: 10px;/*djwan @20110512 NVRD-0368_SC_NVR_0414*/
+
+}
+
+
+.DVR0504_div_downBtn{
+	position:relative;
+	top: 8px;
+	left: 20px;
+
+}
+
+.DVR0504_div_controlBtn{
+	position:relative;
+	top: 11px;
+	left: 20px;
+
+}
+
+
+/*******************djwan start*/
+.wordBackColor{
+	background-color:#333333;
+}
+
+
+body {
+	font-family:"RgPHeiseiMG-W4";
+	font-weight:200;/*change from bold to normal by duhong @ 20110415*/
+	color:#FFFFFF;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	
+	width:482px;
+	height:480px;
+	
+	scrollbar-3dlight-color:#333; 
+	scrollbar-darkshadow-color:#333; 
+	scrollbar-highlight-color:#333; 
+	scrollbar-shadow-color:#333;
+	scrollbar-arrow-color:#000; 
+	scrollbar-base-color:#fff; 
+	scrollbar-face-color:#c0c0c0; 
+	scrollbar-track-color:#fff; 
+
+	/*overflow:hidden ;*/
+	/*font-size:17px;*/
+}
+
+input,select,textarea,input[type=button],button{
+	font-family:"RgPHeiseiMG-W4";
+	font-weight:200;
+	/*font-size:17px;*/
+}
+
+.big-button{
+	width:120px;
+}
+
+.small-button{
+	width:44px;
+	font-family:"RgPHeiseiMG-W4";
+	font-size:12px;
+	font-weight:200;
+}
+
+
+#DVR9901_button1{
+	border-width: 2px;
+	border-style:outset;
+	outline-color: #FFA011;
+	outline-style: solid;
+	outline-width: 2px;
+
+}
+
+input[type="button" ]:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="file"]::-webkit-file-upload-button, button:focus {
+	border-width: 0px;
+	border-style:none;
+	outline-color: #fff;
+	outline-style: solid;
+	outline-width: 0px;
+}
+
+input[id="DVR99-02-01_button1"]:focus,input[id="DVR99-02-01_button2"]:focus {
+	border-width: 2px;
+	border-style:outset;
+	outline-color: #FFA011;
+	outline-style: solid;
+	outline-width: 2px;
+}
+
+
+/*******************djwan end*/
+
+
+/*djwan @20110524*/
+input[id="upBtn"]:focus, input[id="downBtn"]:focus, input[id="controlBtn"]:focus {
+	border-width: 2px;
+	border-style:outset;
+	outline-color: #FFA011;
+	outline-style: solid;
+	outline-width: 2px;
+}
+
+/*テーブル幅*/
+table td.td1 {
+	width:30px
+}
+table td.td2 {
+	width:160px;
+}
+table td.td3 {
+	width:120px;
+}
+
+
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Status>
+<Sets>
+<Set ID="0" SetPeriod="1" SetNtp="1" SetNtpaddr="192.168.1.1" SetHour="12" SetMinute="12"></Set>
+</Sets>
+</Status>
+

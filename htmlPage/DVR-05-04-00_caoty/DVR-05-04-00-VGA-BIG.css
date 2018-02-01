@@ -1,0 +1,200 @@
+
+#DVR0504main {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:611px;
+	height:480px;
+	color:#FFFFFF;
+	background-color:#000033; /*透過色*/
+
+}
+#WhollyBackground {
+	position:absolute;
+	left:0px;
+	top:-1px;
+	width:611px;
+	height:480px;
+	background-color:#506473;
+}
+#C-Mainbody {
+	overflow:hidden;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:611px;
+	height:480px;
+	/*background-color:#506473;*/
+	/*background-color:#9CF;*/
+	/*display:none;*/
+}
+#DVR0504ErrorMenu {
+	position:absolute;
+	top:5px;
+	width:611px;
+	height:398px;
+	color:#FFFFFF;
+	background-color:#333333;
+	/*left:3px;*/
+	/*width:410px;*/
+	/*background-color:#9CF;*/
+}
+#DVR0504title {
+	width:610px;
+	height:20px;
+	text-align:center;
+	margin-top:3px;
+	color:#FFFFFF;
+	font-family:"RgPHeiseiMG-W4";
+	font-size: 20px;
+	padding-top:3px;
+	/*width:350px;*/
+	/*font-family: "ＭＳ ゴシック", "MS Gothic";*/
+}
+.DVR0504ErrContent {
+	width:591px;
+	height:315px;
+	text-align: center;
+	color:#FFFFFF;
+	overflow: auto;
+	margin-top:4px;
+	margin-left:10px;
+	padding-top:2px;
+	padding-bottom:4px;
+	background-color:#506473;
+	/*width:410px;*/
+}
+
+.DVR0504newBtn {
+	width:560px;
+	height:52px;
+	border:solid 1px #FFFFFF;
+	padding-left:9px;
+	color:#FFFFFF;
+	margin-top:3px ;
+	margin-bottom:3px;
+	font-size:20px;
+	background-color:#506473;
+	/*background-color:#9cf;*/
+	/*width:380px;*/
+	/*-webkit-border-radius:2px;*/
+	/*-moz-border-radius:2px;*/
+}
+.DVR0504newErrBtn {
+	width:560px;
+	height:52px;
+	border:solid 1px #F00;
+	padding-left:9px;
+	color:#FFFFFF;
+	margin-top:3px ;
+	margin-bottom:3px;
+	font-size:20px;
+	background-color:#506473;
+	/*background-color:#9cf;*/
+	/*width:380px;*/
+	/*-webkit-border-radius:3px;*/
+	/*-moz-border-radius:3px;*/
+}
+
+.DVR0504upBtn{
+	width:185px;
+	height:25px;
+	margin-left:10px;/*djwan @20110512 NVRD-0368_SC_NVR_0414*/
+	display:block
+}
+
+.DVR0504downBtn{
+	width:185px;
+	height:25px;
+	margin-left:212px;/*djwan @20110512 NVRD-0368_SC_NVR_0414*/
+	margin-top:-25px;
+	display:block
+}
+
+.DVR0504controlBtn{
+	width: 185px;
+	height:25px;
+	margin-left:414px;/*djwan @20110512 NVRD-0368_SC_NVR_0414*/
+	margin-top:-25px;
+	display:block
+}
+
+#DVR9901_button1{
+	border-width: 2px;
+	border-style:outset;
+	outline-color: #FFA011;
+	outline-style: solid;
+	outline-width: 2px;
+
+}
+
+body {
+	font-family:"RgPHeiseiMG-W4";
+	color:#FFFFFF;
+	font-weight:200;/*change from bold to normal by duhong @ 20110418*/
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	
+	width:611px;
+	height:480px;
+	
+	scrollbar-3dlight-color:#333; 
+	scrollbar-darkshadow-color:#333; 
+	scrollbar-highlight-color:#333; 
+	scrollbar-shadow-color:#333;
+	scrollbar-arrow-color:#000; 
+	scrollbar-base-color:#fff; 
+	scrollbar-face-color:#c0c0c0; 
+	scrollbar-track-color:#fff; 
+
+	/*overflow:hidden ;*/
+	/*font-size:20px;*/
+}
+
+small-button{
+	width:74px;
+	/*font-size:14px;*/
+}
+
+input[type="button" ]:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="file"]::-webkit-file-upload-button, button:focus {
+	border-width: 2px;
+	border-style:outset;
+	outline-color: #fff;
+	outline-style: solid;
+	outline-width: 0px;
+}
+
+input[id="DVR99-02-01_button1"]:focus,input[id="DVR99-02-01_button2"]:focus {
+	border-width: 2px;
+	border-style:outset;
+	outline-color: #FFA011;
+	outline-style: solid;
+	outline-width: 2px;
+}
+
+input[id="upBtn"]:focus, input[id="downBtn"]:focus, input[id="controlBtn"]:focus {
+	border-width: 2px;
+	border-style:outset;
+	outline-color: #FFA011;
+	outline-style: solid;
+	outline-width: 2px;
+}
+
+/*テーブル幅*/
+table td.td1 {
+	width:50px
+}
+table td.td2 {
+	width:250px;
+}
+table td.td3 {
+	width:200px;
+}
+.DVR0504_div_upBtn{
+	position: absolute;
+	height:23px;
+	padding-top:12px;
+	/*position:relative;*/
+}
+

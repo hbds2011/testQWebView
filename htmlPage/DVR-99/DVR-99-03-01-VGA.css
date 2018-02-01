@@ -1,0 +1,145 @@
+@charset "euc-jp";
+
+th
+{
+	font-size:17px;
+	text-align:center;
+	background-color:#6699cc;
+	font-weight:700;
+	height:26px;
+}
+
+#F_popUp{
+	z-index:17;
+	position:absolute;
+	top:10px;
+	left:10px;
+}
+
+#DVR-99-03-01_main{
+	width:684px;
+	height:444px;
+	border:8px #FFF solid;
+	-webkit-border-radius:13px;
+    -moz-border-radius:13px;
+}
+
+#DVR-99-03-01_border{
+	font-family:"RgHeiseiMG-W4";
+	position:relative;
+	top:-3px;
+	left:-3px;
+	width:688px;
+	height:448px;
+	-webkit-border-radius:11px;
+    -moz-border-radius:11px;
+}
+
+#change_table{
+	position:relative;
+	top:20px;
+	left:8px;
+	width:756px;
+	height:500px;
+}
+
+.DVR-09-03-tr-01{
+	height:30px;
+}
+
+.camera_table{
+	width:657px;
+	border-spacing:5px 1px;
+}
+
+.camera_table td{
+	font-size:17px;
+	font-weight:700;
+	height:26px;
+}
+
+#change_com1{
+	position:relative;
+	left:12px;
+	top:10px;
+}
+
+.list_table{
+	table-layout:fixed;
+	width:657px;
+	border-spacing:5px 5px;
+}
+
+.list{
+	overflow-y:scroll;
+	width:674px;
+	height:341px;
+}
+
+.list:focus{
+	overflow-y:scroll;
+	width:674px;
+	height:341px;
+	outline-color:#FFA011;
+	outline-style:solid;
+	outline-width:2px;
+}
+
+.list_table td{
+	font-size:17px;
+	font-weight:700;
+	height:26px;
+}
+
+#back_button{
+	position:relative;
+	top:-96px;
+	left:501px;
+}
+
+.t1{
+	width:110px;
+}
+
+.t2{
+	width:66px;
+}
+
+.t3{
+	width:64px;
+}
+
+.t4{
+	width:59px;
+}
+
+.t5{
+	width:86px;
+}
+
+.t6{
+	width:52px;
+}
+
+.t7{
+	width:56px;
+}
+
+.t8{
+	width:48px;
+}
+
+.ch_space{
+	letter-spacing: -6px;
+}
+
+td:focus,div:focus{
+	border-width:0px;
+	outline-color:#fff;
+	outline-style:solid;
+	outline-width:2px;
+	outline-offset: -2px;
+}
+
+
+

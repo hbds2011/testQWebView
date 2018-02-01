@@ -1,0 +1,235 @@
+@charset "euc-jp";
+/*body  {
+	font-family: "MS ゴシック","MS Gothic";
+	font-size:14px;
+	overflow:hidden;
+	/*background-attachment:fixed;*/
+/*}*/
+td
+{
+	/*font-size:12px;
+	background-color:#666666;*/
+	/*background-color:#506473;*/
+	/*font-weight:600;*/
+	/*border:solid 2px #333333;*/
+}
+
+/*
+tr
+{
+	height:21px;
+}
+*/
+
+#mainContent { 
+	margin: 0 0 0 0px; 
+	/*padding-left:10px;
+	padding-top:10px; deleted by Freya 11.07.29*/
+	width:720px;
+	height:480px;
+} 
+.clearfloat {
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+
+.select2{
+	width:65px;
+}
+.select4 {
+	width:85px;
+}
+
+.dengen:focus{
+	border-width:2px;
+	border-style:solid;
+	border-color:#FFA011;
+
+}
+
+.dengenDim:focus{
+	border-width:2px;
+	border-style:solid;
+	border-color:#FFF;
+}
+
+.ntpset:focus{
+	border-width:2px;
+	border-style:solid;
+	border-color:#FFA011;
+}
+
+.ntpsetDim:focus{
+	border-width:2px;
+	border-style:solid;
+	border-color:#FFF;
+}
+.button_frame {
+	margin-top:6px;
+}
+.button_box {
+	position:absolute;
+	float:right;
+	right:10px;
+	bottom:10px;
+}
+
+/*
+.button {
+	width:170px;
+}
+*/
+
+.info_frame {
+	clear:both;
+	margin-top:150px;
+	/*font-size:12px;*/
+	display:none;
+}
+
+.div_set1 {
+	/*background-color:#333333;*/
+	width:710px; /*modified by Freya 11.07.29(675->700)*/
+	/*padding-top:15px;
+	padding-left:5px;*/
+	margin-left:5px;
+	margin-top:5px;
+	height:115px; /*modified by Freya 11.07.29(108->128)*/	
+} 
+.div_set2 {
+	/*background-color:#666666;*/
+	width:710px; /*modified by Freya 11.07.29(684->710)*/
+	/*margin: 0 0 0 0px;
+	padding-top:5px;
+	padding-left:0px;*/
+	margin-left:5px;
+	/*margin-top:5px;*/
+	height:44px;
+} 
+.div_set3 {
+	/*background-color:#333333;*/
+	width:710px; /*modified by Freya 11.07.29(675->700->710)*/
+	/*padding-top:15px;
+	padding-left:5px;*/
+	margin-top:4px; /*modified by Freya 11.07.29(15->10->5)*/
+	margin-left:5px; /*10->5*/
+	height:131px; /**/
+} 
+
+.DVR-02-04-table-01 {
+	position:relative;
+	width:100%; /*modified by Freya 11.07.29(660->100%)*/
+	height:100%;
+	border-spacing:5px 5px;
+}
+.DVR-02-04-table-02 {
+	position:relative;
+	margin-top:0px;
+	/*margin-left:-2px; deleted by Freya 11.07.29*/
+	width:100%; /*modified by Freya 11.07.29(684->100%)*/
+	height:100%;
+	border-spacing:5px 5px;
+}
+.DVR-02-04-table-03 {
+	position:relative;
+	/*margin-top:0px;
+	margin-left:5px;*/
+	width:100%; /*modified by Freya 11.07.29(660->100%)*/
+	height:100%;
+	border-spacing:5px 5px;
+}
+.text_no_border {
+	text-align:center;
+	border:none;
+	alignment-adjust:central;	
+}
+
+.DVR-02-04-00-tr-01 {
+	height:36px; /*modified by Freya 11.07.29(26->36)*/
+	padding:0px;
+}
+
+.C101 {
+	width:653px;
+	padding:0px 0px 5px 10px;
+}
+.C102 {
+	width:auto; /*295->auto*/
+	padding:0px;
+}
+.C103 {
+	width:50px; /*modified by Freya 11.07.29(45->50)*/
+	padding:0px;
+}
+.C104 {
+	width:auto; /*270->auto*/
+	padding:0px;
+}
+
+.C105 {
+	width:200px;
+	padding:0px;
+}
+
+.C201 {
+	width:200px; /*modified by Freya 11.07.29(247->200)*/
+	padding:0px;
+	/*background-color:#333333;*/
+	/*border:solid 2px #666666;*/
+	/*border:solid 2px #506473;*/
+}
+.C202 {
+	width:auto; /*modified by Freya 11.07.29(440->494->auto)*/
+	padding:0px;
+	/*background-color:#333333;*/
+	/*border:solid 2px #666666;*/
+	/*border:solid 2px #506473;*/
+}
+
+.C301 {
+	width:200px; /*modified by Freya 11.07.29(260->200)*/
+	padding:0px;
+}
+.C302 {
+	width:492px; /*modified by Freya 11.07.29(420->492)*/
+	padding:0px;
+}
+.textaddr{
+	width:470px;
+}
+div:focus {
+	outline-width:0px;
+	border-color:#FFA011;
+	border-width:2px;
+	border-style:solid;
+}
+.FocusDiv {
+	outline-width:0px;
+	border-color:transparent;
+	border-width:2px;
+	border-style:solid;
+	width:99%;
+	height:100%;
+}
+
+/*added by Freya start 11.07.29*/
+.tdWidth{
+	width:112px;
+}
+
+.tdWidth1{
+	width:23%;
+}
+
+.RadioTd{
+	text-align:left;
+	padding-left:8px;
+	padding-right:0px;
+	padding-bottom:0px;
+	padding-top:3px;
+	width:auto;
+	height:auto;
+}
+/*added by Freya end 11.07.29*/

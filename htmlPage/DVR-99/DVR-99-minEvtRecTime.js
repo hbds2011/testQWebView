@@ -1,0 +1,1 @@
+var MinEvtRecTime = 5;

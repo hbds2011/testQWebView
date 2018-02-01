@@ -1,0 +1,175 @@
+@charset "euc-jp";
+/* CSS Document */
+#DVR010101Container
+{
+position:absolute;
+width:626px;
+height:466px;
+left:100px;
+top:100px;
+-webkit-border-radius: 13px;
+-moz-border-radius: 13px;
+border:#FFFFFF solid 5px;
+z-index:28;
+display:none;
+
+}
+.DVR010101Border
+{
+position:absolute;
+width:625px;
+height:468px;
+-webkit-border-radius: 11px;
+left:-1px;
+top:-2px;
+z-index:28;
+}
+
+.DVR010101Top
+{
+position:absolute; 
+top: 41px; 
+height: 18px;
+left: 66px;
+width: 74px;
+}
+.DVR010101R1
+{
+position:absolute; 
+left: 147px; 
+width: 73px; 
+top: 41px; 
+height: 16px;
+}
+.DVR010101R2
+{
+position:absolute; 
+left: 205px; 
+top: 40px; 
+width: 102px; 
+height: 16px;
+}
+.DVR010101Se
+{
+position:absolute; 
+left: 66px; 
+top: 68px; 
+width: 239px; 
+height: 22px;
+}
+.DVR010101Ds
+{
+	width:382px;
+	height:260px;
+	background-color:#FFFFFF; 
+	overflow:scroll;
+	overflow-x:hidden;
+	border:solid #333333;
+	color:#333333;
+	z-index:30;
+}
+.DVR010101BtnPs
+{
+	position:absolute; 
+	left:281px; 
+	top:437px; 
+}
+.DVR010101BtnPs2
+{
+	position:absolute; 
+	left:458px; 
+	top:437px; 
+}
+.DVR010101BotmFnt
+{
+	position:absolute;
+	background-color:#506473;
+	left:10px;
+	width:606px; 
+	top:383px;
+}
+.DVR010101CBorder
+{
+position:absolute; 
+border:solid;
+color:#FFFFFF;
+background-color:#313131;
+border-color:#FFA011; 
+width: 400px; 
+height: 262px; 
+left: 62px; 
+top: 105px; 
+z-index:29;
+}
+.DVR_form1
+{
+margin-left:10px;
+margin-top:10px; 
+margin-right:10px; 
+margin-bottom:10px; 
+width:606px;
+height:357px; 
+}
+.tr1
+{
+height:5px;
+}
+.tr2
+{
+height:14px;
+}
+.tr2_td1
+{
+text-align:center; 
+width:181px;
+height:24px;
+}
+.tr2_td2
+{
+width:3px;
+}
+.tr2_td3
+{
+width:388px;
+}
+.tr3
+{
+height:24px;
+}
+.tr3_td1
+{
+width:181px; 
+text-align:center;
+}
+.select1
+{
+width:240px;
+}
+
+.select1_1/*djwan @20110608*/
+{
+width:240px;
+}
+.td_width1{
+	width:95px;
+}
+.td_width_cam{
+	width:80px;
+}
+.tr4
+{
+height:268px;
+}
+.message
+{
+width:88px;
+text-align:left;
+}
+
+/* 選択カメラフォーカス非活性色設定 */
+.disFocus:focus
+{
+	outline-color:#FFF;
+	outline-width:2px;
+	outline-style:solid;
+}

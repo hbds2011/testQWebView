@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Result>
+<TotalRows>10</TotalRows>
+<ErrorList>
+<Error MfgId="111" Net_MID="111" Date="2017年10月27日" Time="12:12:12" Name="名前１" Code="111" ErrorKind="HDDフル" Status="異常発生中" ErrorID="111"/>
+<Error MfgId="222" Net_MID="222" Date="2017年10月27日" Time="12:12:12" Name="名前２" Code="222" ErrorKind="HDDフル" Status="異常発生中" ErrorID="222"/>
+<Error MfgId="333" Net_MID="333" Date="2017年10月27日" Time="12:12:12" Name="名前３" Code="333" ErrorKind="HDDフル" Status="異常発生中" ErrorID="333"/>
+<Error MfgId="444" Net_MID="444" Date="2017年10月27日" Time="12:12:12" Name="名前４" Code="444" ErrorKind="機器異常" Status="異常発生中" ErrorID="444"/>
+<Error MfgId="555" Net_MID="555" Date="2017年10月27日" Time="12:12:12" Name="名前５" Code="555" ErrorKind="機器異常" Status="異常発生中" ErrorID="555"/>
+</ErrorList>
+<Success>1</Success>
+</Result>
+
+

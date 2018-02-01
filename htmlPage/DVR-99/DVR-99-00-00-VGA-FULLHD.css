@@ -1,0 +1,307 @@
+@charset "utf-8";
+
+body {
+	font-family:"RgPHeiseiMG-W4";
+	font-size:17px;
+	font-weight:200;/*change from bold to normal by duhong @ 20110415*/
+	
+	color:#FFFFFF;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	/*opacity:0.9;*/
+	
+	scrollbar-3dlight-color:#333; 
+	scrollbar-darkshadow-color:#333; 
+	scrollbar-highlight-color:#333; 
+	scrollbar-shadow-color:#333;
+	scrollbar-arrow-color:#000; 
+	scrollbar-base-color:#fff; 
+	scrollbar-face-color:#c0c0c0; 
+	scrollbar-track-color:#fff; 
+}
+
+input,select,textarea,input[type=button],button{
+	font-family:"RgPHeiseiMG-W4";
+	font-size:17px;
+	font-weight:200;
+}
+
+/* Turn on single button up on top, and down on bottom */
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+}
+ 
+/* Turn off the down area up on top, and up area on bottom */
+::-webkit-scrollbar-button:start:increment,
+::-webkit-scrollbar-button:end:decrement {
+    display: none;
+}
+::-webkit-scrollbar {
+    width: 19px;
+    height: 19px;
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+	background-image:url(../images/DVR-99-track_top.png);
+	height:20px; 
+	width:19px;
+	border-bottom:#333 solid 3px;
+}
+::-webkit-scrollbar-button:vertical:increment {
+	background-image:url(../images/DVR-99-track_bot.png);
+	height:20px; 
+	width:19px;
+	border-top:#333 solid 3px;
+}
+::-webkit-scrollbar-track-piece {
+    background-color: #c0c0c0;
+	border-left:#808080 solid 1px;
+	border-right:#808080 solid 1px;
+}
+
+/* The thumb itself */
+::-webkit-scrollbar-thumb:vertical {
+    background-color: #fff;
+	border:#808080 solid 1px;
+}
+
+#C-Mainbody {
+	overflow:hidden;
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:1900px;
+	background-color:#000033; /*透過色*/
+
+    height:1060px;
+}
+/* right content  */
+#C-MainsideRight {
+	/*width:768px;*/	/*(688->768)*/
+	width:804px;
+	height:738px;
+	float:left;
+}
+
+/*  left menu  */
+#C-mainLeftMenu {
+	margin-top:5px;
+	width:220px;
+	height:738px;
+	float:left;
+	background-color:#363636;
+	color:#FFF;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+/*  page header ライブ表示部分  */
+.C-mainTopMenu {
+	width:1900px;
+	height:5px;
+	background-color:#000033; /*透過色*/
+
+}
+.C-mainEndMenu {
+	position:absolute;
+	margin-top:728px; /*(688->728)*/
+	width:1900px;
+	height:0px;	/*(40->0)*/
+	background-color:#000033; /*透過色*/
+
+}
+.C-mainTitle {
+	width:210px;	/*(200->210)*/
+	height:30px;
+	font-size:25px;
+	margin-top:5px; /*10->5*/
+	padding-left:10px;
+}
+.C-mainTitleLoc {
+	width:150px;
+	height:25px;
+	margin-top:3px;
+	margin-left:10px;
+	float:left;
+}
+
+.big-button{
+	width:190px;
+}
+
+.middle-button{
+	width:127px;
+}
+
+.pageBackColor{
+	background-color:#506473;
+}
+
+#WhollyBackground {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:1920px;
+	height:743px; /*(768->808)*/
+	background-color:#000033; /*透過色*/
+
+}
+
+
+#coverLayer {
+	position:absolute;
+	left:0px;
+	top:5px;
+	width:1900px;
+	height:738px; /*(688->728)*/
+	background-color:#506473;
+	z-index:3;
+}
+
+/* globle element css defination for focus behavior*/
+
+/* a */
+
+a{
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+a:focus{
+	border-width:0px;
+	outline-color:#FFA011;
+	outline-style:solid;
+	outline-width:2px;
+}
+
+input{
+
+	height:22px;
+}
+
+fieldset:focus {
+	outline-width:0px;
+	border-color:#FFA011;
+	border-width:2px;
+	border-style:solid;
+}
+/* radio */
+
+input[type=radio]{
+	margin:0px;
+}
+/* checkBox*/
+
+input[type=checkbox]{
+	margin:0px;
+}
+/* text */
+
+input[type=text],input[type=password]{
+	border-width:2px;
+}
+
+input[type=text]:focus,input[type=password]:focus{
+	border-width:2px;
+	outline-color:#FFA011;
+	outline-style:solid;
+	outline-width:2px;
+}
+
+/* checkbox & radiobox */
+
+input[type=checkbox]:focus,input[type=radio]:focus{
+	border-width:0px;
+	outline-color:#FFA011;
+	outline-style:solid;
+	outline-width:2px;
+}
+
+/* select */
+
+select{
+	text-align:center;
+}
+
+select:focus{
+	outline-width:2px;
+	outline-color:#FFA011;
+	outline-style:solid;
+}
+
+/*button*/
+
+input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button {
+	border-width: 2px;
+	border-style: outset;
+}
+
+input[type="button"]:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="file"]::-webkit-file-upload-button, button:focus {
+	border-width: 2px;
+	border-style:outset;
+	outline-color: #FFA011;
+	outline-style: solid;
+	outline-width: 2px;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="file"]::-webkit-file-upload-button, button:hover {
+	border-width 2px;
+	border-style:outset;
+}
+
+input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:active, input[type="file"]::-webkit-file-upload-button, button:active {
+	border-width: 2px;
+	border-style:outset;
+}
+
+#ATField {
+	width:1900px;
+	height:768px;
+	background:transparent;
+	z-index:100;
+	display:none;
+}
+
+#ATFieldHint {
+	position:absolute;
+	top:384px;
+	left:480px;
+	background:#F00;
+}
+
+.camer_selectWidth{
+	width:280px;
+}
+
+.fourButtonPosition1{
+	position:absolute;
+	left:734px;
+	bottom:10px;	
+}
+
+.fourButtonPosition2{
+	position:absolute;
+	left:536px;
+	bottom:10px;	
+}
+
+.fourButtonPosition3{
+	position:absolute;
+	left:338px;
+	bottom:10px;	
+}
+
+.fourButtonPosition4{
+	position:absolute;
+	left:140px;
+	bottom:10px;	
+}
+
+.font_Rg {
+	font-family:"RgHeiseiMG-W4" !important;
+}
+
+
+

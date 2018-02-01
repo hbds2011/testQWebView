@@ -1,0 +1,103 @@
+#DVR99-02-02_main{
+	border:4px #6699CC solid;
+	z-index:25;
+	-webkit-border-radius:6px;
+    -moz-border-radius:6px;
+	width:350px;
+	height:196px;
+}
+
+#DVR99-02-02_border{
+	position:relative;
+	border:4px #FFF solid;
+	top:-0px;
+	left:-2px;
+	width:346px;
+	height:190px;
+	-webkit-border-radius:6px;
+    -moz-border-radius:6px;
+}	
+#DVR99-02-02_text{
+	padding-left:1px;
+	position:absolute;
+	text-align:center;
+	width:326px;
+	height:100px;
+	top:5px;
+	left:10px;
+	outline-width:0px;
+	border-color:#333333;
+	border-width:2px;
+	border-style:solid;
+	line-height:120%;
+}	
+#DVR99-02-02_text:focus{
+	outline-width:0px;
+	border-color:#333333;
+	border-width:2px;
+	border-style:solid;
+}
+#DVR99-02-02_b1{
+	position:absolute;
+	bottom:14px;
+	left:30px;
+	outline-width:0px;
+	border-color:#333333;
+	border-width:2px;
+	border-style:solid;
+}
+#DVR99-02-02_b2{
+	position:absolute;
+	bottom:14px;
+	right:30px;
+	outline-width:0px;
+	border-color:#333333;
+	border-width:2px;
+	border-style:solid;
+}
+.DVR99-02-02-button1{
+	position:absolute;
+	text-align:center;
+	bottom:10px;
+	left:0px;
+	width:345px;
+	height:28px;
+}
+/********** david add 2011.09.16  **************/
+.DVR99-02-02-table{
+	position:absolute;
+	text-align:center;
+	top:110px;
+	left:10px;
+	width:325px;
+	height:30px;
+	display:none;
+}
+
+/*  popアップ表示の画面マスク  */
+#DVR{
+	position:absolute;
+	left:0px;
+	top:5px;
+	background-color: #333333;
+	width:804px;
+	height:738px;
+	display:none;
+	filter:Alpha(opacity=70);
+	-moz-opacity:0.7; 
+	opacity:0.70;
+	z-index:10;
+}
+
+#DVR_popUp_2{
+	position:absolute;
+	width:400px;
+	display:none;
+	height:200px;
+	top:270px;
+	left:225px;
+	z-index:15;
+}
+
+
+

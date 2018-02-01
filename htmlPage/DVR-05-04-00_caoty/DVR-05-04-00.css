@@ -1,0 +1,286 @@
+
+#DVR0504main {
+	position:absolute;
+	top: 0px;
+	left:0px;
+	width:482px;
+	height:545px;
+	color:#FFFFFF;
+	background-color:#000033; /*透過色*/
+	/*height: 100%;*/
+
+}
+#C-Mainbody {
+	overflow:hidden;/*オリジナル*/
+	position:absolute;
+	left:0px;
+	top:-1px;
+	width:482px;
+	height:545px;
+	/*height: 100%*/
+	/*background-color:#506473;*/
+	/*background-color:#9CF;*/
+	/*display:none;*/
+}
+
+#WhollyBackground {
+	position:absolute;
+	left:0px;
+	top:-1px;
+	width:482px;
+	height:545px;
+	background-color:#000033; /*透過色*/
+	/*height: 100%;*/
+}
+#DVR0504ErrorMenu {
+	position:absolute;
+	width:482px;
+	height: 545px;
+	color:#FFFFFF;
+	background-color:#333333;
+	/*top: 5px;*/
+	/*left:5px;*/
+	/*  top:50px;  */
+	/*width:340px;*/
+	/*  height:650px;  */
+	/*height: 768px;*/
+	/*height: 100%;*/
+	/*height: 813px;*/
+	/*background-color:#9CF;*/
+}
+
+#DVR0504title {
+	width:488px;
+	height:25px;
+	text-align:center;
+	margin-top:5px;
+	color:#FFFFFF;
+	font-family:"RgPHeiseiMG-W4";
+	font-size: 17px;
+	padding-top:5px;
+	/*width:340px;*/
+}
+
+/* error list */
+.DVR0504ErrContent {
+	width:462px;
+	height:456px;
+	color:#FFFFFF;
+	background-color:#506473;
+	text-align: center;
+	overflow: auto;
+	margin-left:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+	/*width:340px;*/
+	/*margin-top:10px;*/
+	}
+
+/*  前へ ボタン  */
+/*previos button*/
+.DVR0504upBtn{
+	width: 148px;
+	font-family:"RgPHeiseiMG-W4";
+	font-size: 17px;
+	margin-left: 10px;	/*djwan @20110512 NVRD-0368_SC_NVR_0414*/
+	padding:0px;
+	height:22px;
+	font-weight:200;
+	margin-left:10px;
+	display:block;
+}
+
+/*next button */
+.DVR0504downBtn{
+	width: 148px;
+	font-family:"RgPHeiseiMG-W4";
+	font-size: 17px;
+	margin-left: 167px;
+	margin-top: -22px;
+	padding:0px;
+	height:22px;
+	font-weight:200;
+	display:block;
+}
+/* back button */
+.DVR0504controlBtn{
+	width: 148px;
+	font-family:"RgPHeiseiMG-W4";
+	font-size: 17px;
+	margin-left: 323px;
+	margin-top: -22px;
+	padding:0px;
+	height:22px;
+	font-weight:200;
+	display:block;
+}
+
+.DVR0504newBtn {
+	width:450px;
+	color:#FFFFFF;
+	height:50px;
+	border:solid 1px #FFFFFF;
+	padding-left:15px;
+	background-color:#506473;
+	margin-top:2px ;
+	margin-bottom:5px;
+	/*width:310px;*/
+	/*background-color:#9cf;*/
+	/*-webkit-border-radius:3px;*/
+	/*-moz-border-radius:3px;*/
+}
+.DVR0504newErrBtn {
+	width:450px;
+	height:50px;
+	border:solid 1px #F00;
+	color:#FFFFFF;
+	padding-left:15px;
+	background-color:#506473;
+	margin-top:2px ;
+	margin-bottom:5px;
+	/*width:310px;*/
+	/*background-color:#9cf;*/
+	/*-webkit-border-radius:3px;*/
+	/*-moz-border-radius:3px;*/
+}
+
+.DVR0504_div_upBtn{
+	position: absolute;
+	height:23px;
+	padding-top:10px;
+	bottom: 10px;
+	/*position:relative;*/
+	/*  top:15px;  */
+	/*left: 10px;*/	/*djwan @20110512 NVRD-0368_SC_NVR_0414*/
+}
+
+
+.DVR0504_div_downBtn{
+	position:relative;
+	top: 20px;
+	left: 10px;
+
+}
+/*
+.DVR0504_div_controlBtn{
+	position:relative;
+	top: 30px;
+	left: 10px;
+
+}
+*/
+
+/*******************djwan start*/
+.wordBackColor{
+	background-color:#333333;
+}
+
+body {
+	font-family:"RgPHeiseiMG-W4";
+	font-weight:200;/*change from bold to normal by duhong @ 20110415*/
+
+	scrollbar-3dlight-color:#333; 
+	scrollbar-darkshadow-color:#333; 
+	scrollbar-highlight-color:#333; 
+	scrollbar-shadow-color:#333;
+	scrollbar-arrow-color:#000; 
+	scrollbar-base-color:#fff; 
+	scrollbar-face-color:#c0c0c0; 
+	scrollbar-track-color:#fff; 
+
+	/*overflow:hidden ;*/
+	/*font-size:17px;*/
+	/*	color:#FFFFFF;
+	overflow:hidden;
+	margin:0;
+	padding:0;*/
+	
+	width:482px;
+	height:545px;
+}
+
+input,select,textarea,input[type=button],button{
+	font-family:"RgPHeiseiMG-W4";
+	font-weight:200;
+	/*font-size:17px;*/
+}
+
+.big-button{
+	width:190px;
+}
+
+.small-button{
+	width:64px;
+	font-family:"RgPHeiseiMG-W4";
+	font-size:17px;
+	font-weight:200;
+}
+
+#DVR9901_button1{
+	border-width: 2px;
+	border-style:outset;
+	outline-color: #FFA011;
+	outline-style: solid;
+	outline-width: 2px;
+
+}
+
+input[type="button" ]:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="file"]::-webkit-file-upload-button, button:focus {
+	border-width: 0px;
+	border-style:none;
+	outline-color: #fff;
+	outline-style: solid;
+	outline-width: 0px;
+}
+
+#errlist input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="file"]::-webkit-file-upload-button, button:hover {
+	border-width: 1px;
+	border-style:solid;
+}
+
+input[id="DVR99-02-01_button1"]:focus,input[id="DVR99-02-01_button2"]:focus {
+	border-width: 2px;
+	border-style:outset;
+	outline-color: #FFA011;
+	outline-style: solid;
+	outline-width: 2px;
+}
+
+input[id="upBtn"]:focus, input[id="downBtn"]:focus, input[id="controlBtn"]:focus {
+	border-width: 2px;
+	border-style:outset;
+	outline-color: #FFA011;
+	outline-style: solid;
+	outline-width: 2px;
+}
+
+/*
+#DVR{
+	position:absolute;
+	top:40px;
+	left:220px;
+	background-color:#333333;
+	width:800px;
+	display:none;
+	height:690px;
+	filter:Alpha(opacity=70);
+	-moz-opacity:0.7; 
+	opacity:0.70;
+	z-index:10;
+	}*/
+
+/*******************djwan end*/
+
+/*テーブル幅*/
+table td.td1 {
+	width:40px
+}
+table td.td2 {
+	width:220px;
+}
+table td.td3 {
+	width:175px;
+}
+
+
+

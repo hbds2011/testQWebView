@@ -1,0 +1,25 @@
+@charset "euc-jp";
+
+fieldset:focus{
+	border-width:0px;
+	outline-color:#FFA011;
+	outline-width:2px;
+	outline-style:solid;
+}
+
+fieldset{
+	outline-width:2px;
+	border-width:0px;
+}
+
+div:focus{
+	border-width:0px;
+	outline-color:#FFA011;
+	outline-width:2px;
+	outline-style:solid;
+}
+
+div{
+	outline-width:2px;
+	border-width:0px;
+}

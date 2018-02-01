@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:spry="http://ns.adobe.com/spry">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>DVR-05-04-00</title>
+<link href="../DVR-99/DVR-99-00-00.css" rel="stylesheet" type="text/css" id="DVR99-00-00css" />
+<link href="" rel="stylesheet" type="text/css"  id="DVR0504myCSS" />
+<link href="" rel="stylesheet" type="text/css" id="DVR-99-02-01css" />
+<script src="../SpryAssets/xpath.js" type="text/javascript"></script>
+<script src="../SpryAssets/SpryData.js" type="text/javascript"></script>
+<script src="../SpryAssets/SpryUtils.js" type="text/javascript"></script>
+<script src="../SpryAssets/SpryURLUtils.js" type="text/javascript"></script>
+<script src="../SpryAssets/SpryNestedXMLDataSet.js" type="text/javascript"></script>
+<script src="../DVR-99/DVR-99_caoty.js" type="text/javascript" ></script>
+<script src="../DVR-99/DVR-99-00-00.js" type="text/javascript"></script>
+<script src="../DVR-99/DVR-99-99-01.js" type="text/javascript"></script><!--add by djwan 2011-4-28 -->	
+<script src="../DVR-99/DVR-99-02-01.js" type="text/javascript"></script>
+<script src="../DVR-99/DVR-99-99-02.js" type="text/javascript"></script>
+<script src="DVR-05-04-00.js" type="text/javascript" ></script>
+</head>
+
+<body  onload="screenChange()" onkeydown="revive_focus();catchKey(event)">
+<div id="WhollyBackground">
+<div id="C-Mainbody" style="display:none;">
+<div id="C-MainsideRight">
+<div id="DVR0504main"  >
+  <div id="DVR0504ErrorMenu">
+    <div id="DVR0504title"></div> 
+    <div id="errlist" spry:region="dsError" class="DVR0504ErrContent">
+    </div>
+	<!--djwan  2011-4-8 start-->
+	<div class="DVR0504_div_upBtn">
+    <input type="button" value="前へ" class="DVR0504upBtn" id="upBtn" onclick="upPage()" onmousedown="setfocus_click(this)" />
+	
+    <input type="button" value="次へ" class="DVR0504downBtn" id="downBtn" onclick="downPage()" onmousedown="setfocus_click(this)" />
+	
+	<input type="button" id="controlBtn" class="DVR0504controlBtn" value="戻る" onclick="callBack()" onmousedown="setfocus_click(this)"/>
+
+	</div>
+	<div class="DVR0504_div_controlBtn">
+	</div>
+	<!--djwan  2011-4-8 end-->
+  </div>
+ 
+
+<form id="DVR050400form" method="post">
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<div id="DVR_popUp"></div>
+<div id="DVR" style="display:none"></div>
+
+</body>
+</html>

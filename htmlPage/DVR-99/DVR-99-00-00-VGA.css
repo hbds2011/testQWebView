@@ -1,0 +1,668 @@
+@charset "utf-8";
+
+
+body {
+	/*overflow:hidden ;*/
+	font-family:"RgPHeiseiMG-W4";
+	font-size:14px;
+	font-weight:200;/*change from bold to normal by duhong @ 20110418*/
+	color:#FFFFFF;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+	/*opacity:0.9;*/
+}
+
+/*input,select,textarea,input[type=button],button{
+	font-family:"RgPHeiseiMG-W4";
+	font-size:14px;
+	font-weight:200;
+}*/
+
+input,textarea,input[type=button],button{
+	font-family:"RgHeiseiMG-W4";
+	font-size:14px;
+	font-weight:200;
+}
+
+input,select{
+	font-family:"RgPHeiseiMG-W4";
+	font-size:14px;
+	font-weight:200;
+}
+
+/* Turn on single button up on top, and down on bottom */
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: block;
+}
+ 
+/* Turn off the down area up on top, and up area on bottom */
+::-webkit-scrollbar-button:start:increment,
+::-webkit-scrollbar-button:end:decrement {
+    display: none;
+}
+/*  width:縦スクロールバーの幅、height:横スクロールバーの高さ  */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+/* スクロールボタンの設定（上） */
+::-webkit-scrollbar-button:vertical:decrement {
+	background-image:url(../images/DVR-99-track_top_ntsc.png);
+	height:10px; 
+	width:10px;
+	border-bottom:#333 solid 3px;
+}
+
+/* スクロールボタンの設定（下） */
+::-webkit-scrollbar-button:vertical:increment {
+	background-image:url(../images/DVR-99-track_bot_ntsc.png);
+	height:10px; 
+	width:10px;
+	border-top:#333 solid 3px;
+}
+
+/*  thumbの上下部分  */
+::-webkit-scrollbar-track-piece {
+	background-color: #FFFFFF;
+	border-left:#808080 solid 1px;
+	border-right:#808080 solid 1px;
+}
+
+/* The thumb itself */
+/* スライド部分 */
+::-webkit-scrollbar-thumb:vertical {
+	background-color: #DCDCDC;
+	-webkit-box-shadow: inset 0 0 4px rgba(0,0,0,2);
+	border-top:#686868 solid 2px;
+	border-bottom:#686868 solid 2px;
+	border-left:#686868 solid 1px;
+	border-right:#686868 solid 1px;
+}
+
+/* right content  */
+#C-MainsideRight {
+	width:720px; /*modified by Freya 11.07.21(700->720)*/
+	height:480px;
+	float:left;
+}
+/*  left menu  */
+#C-mainLeftMenu {
+	width:180px;/*modified by luo 20110701*/
+	height:400px;
+	float:left;
+	background-color:#363636;
+	color:#FFF;
+	overflow-y:auto;
+	overflow-x:hidden;
+	margin-top:0px;
+	position:fixed;
+	top:0px;
+	left:0px;
+	/* 表示順序を戻るボタンエリアのDIVと入れ替える */
+	z-index:1;
+}
+/*  page header ライブ表示部分 */
+.C-mainTopMenu {
+	width:720px; /*modified by Freya 11.07.21(700->720)*/
+	height:0px; /*modified by Freya 11.07.20*/
+	background-color:#000033; /*透過色*/
+
+}
+.C-mainEndMenu {
+	position:absolute;
+	bottom:0px; /*added by Freya 11.07.20*/
+	width:720px; /*modified by Freya 11.07.21(700->720)*/
+	height:0px; /*modified by Freya 11.07.20(35->0)*/
+	background-color:#000033; /*透過色*/
+
+}
+.C-mainTitle {
+	width:180px;	/*modified by Freya 11.07.18(160->180)*/
+	height:26px; /*28->26*/
+	font-size:16px;
+	margin-top:4px;
+	padding-top:2px;
+	padding-left:10px;	/*added by Freya 11.07.18*/
+}
+.C-mainTitleLoc {
+	width:110px;
+	height:20px;	/*modified by Freya 11.07.18(10->20)*/
+	margin-top:4px;	/*modified by Freya 11.07.18(0->6->4)*/
+	margin-left:10px;
+	float:left;
+}
+.C-mainTitleLoc_Back {
+	width:150px;
+	height:25px;
+	margin-top:3px;
+	margin-left:33px;
+}
+.hr{
+    display:none;
+	width:160px;
+	height:2px;
+	margin-top:-9px;
+	position:relative;
+	float:left;
+}
+.C-mainTitleLocSelect {
+	width:110px;
+	height:20px;
+	margin-top:4px;	/*modified by Freya 11.07.18(0->6->4)*/
+	margin-left:10px;
+	float:left;
+}
+.DVR-auxiliary {
+	margin-top:5px; /*6->5*/
+    height:28px;
+	background-color:#363636;
+}
+.DVR-auxiliary2 {
+	margin-top:5px; /*6->5*/
+    height:28px;
+	background-color:#55A5CD;
+}
+.DVR-auxiliarySelect {
+	margin-top:5px; /*6->5*/
+    height:28px;
+}
+.C-mainImage {
+	margin-left:10px;
+	margin-top:2px; /*modified by Freya 11.07.19(-1->0)*/
+	float:left;
+}
+.C-mainSubMenu {
+	width:160px;
+	height:15px; /*modified by Freya 11.07.18(11->15)*/
+	font-size:14px;
+	text-indent:15px; /*modified by Freya 11.07.19(19->15)*/
+	margin-top:0px;
+	margin-left:10px;
+	padding:4px 0px;
+}
+.C-mainSubMenuSelect {
+	width:160px; /*modified by Freya 11.07.18(160->140)*/
+	height:15px; /*modified by Freya 11.07.18(10->15)*/
+	font-size:14px;
+	text-indent:15px; /*modified by Freya 11.07.19(19->15)*/
+	margin-left:10px;
+	padding:4px 0px;
+	background-color:#55A5CD;
+}
+.C-displayDiv {
+	width:180px;
+	height:auto;
+	background-color:#55A5CD;
+}
+
+.acss {
+	text-decoration: none;
+	color: #FFF;
+}
+
+.acssgray {
+	color: #CCC;
+}
+
+.acss2 {
+	color: #FFF;
+	margin-left:13px;
+}
+
+.mainButtonMenu{
+    position:absolute;
+	bottom:0px;
+	width:180px;
+	height:150px;
+	font-size:16px;
+	background-color:#363636;
+	z-index:0;
+}
+
+/* 戻るラベル */
+.label_back{
+	position:absolute;
+	right: 50px;
+	bottom:38px;
+	font-size:16px;
+}
+/*  main menu Back Button(戻るボタン)  */
+#DVR-mainMenu-52
+{
+	-webkit-border-radius:21px;
+	-moz-border-radius:21px;
+ 	width:25px;	/*44->42*/
+	height:25px;
+	background-position:left top;
+	background-repeat: no-repeat;
+	background-image:url(../images/DVR-99-backbutton_white.png);
+	margin-left:9px;
+	margin-bottom:7px;
+}
+
+/*戻るボタンの選択色*/
+#DVR-mainMenu-52white
+{
+	position:absolute;
+	-webkit-border-radius:21px;
+	-moz-border-radius:21px;
+ 	width:32px;	/*44->42*/
+	height:32px;
+	background-position:left top;
+	background-repeat: no-repeat;
+	background-image:url(../images/DVR-99-backbutton_white.png);
+	bottom:-5px;
+}
+
+#DVR-mainMenu-52-shade
+{
+	position:absolute;
+	bottom:40px;
+	width:171px;
+}
+
+#DVR-mainMenu-52-shader
+{
+	position:absolute;
+	right: 10px;
+	bottom:28px; /*modified by Freya 11.07.20(26->20->13)*/
+ 	width:32px; /*42->43*/
+	height:32px;
+	-webkit-border-radius:21px;
+	-moz-border-radius:212px;
+	background:transparent;
+}
+
+.big-button{
+	width:158px;
+}
+
+.middle-button{
+	width:106px;
+}
+
+.small-button{
+	width:54px;
+}
+
+.pageBackColor{
+	background-color:#506473;
+}	
+
+.transparentColor{
+	background-color:#000033; /*透過色*/
+
+}
+.titleBackColor{
+	background-color:#6699CC;
+}
+
+.wordBackColor{
+	background-color:#333333;
+}
+.timeBarColor{
+	background-color:#FFCC99;
+}
+.imageWhiteColor{
+	background-color:#FFF;
+}
+.pageWhiteColor{
+	background-color:#FFF;
+}
+.boderBlueColor{
+	border-color:#6699CC;
+}
+.thColor{
+	background-color:#55A5CD;
+}
+/*DVR-01-01-00 BY YIN*/
+.borderBackColor{
+	border:#506473 1px solid;
+}
+.borderBackColor2{
+	border:#506473 2px solid;
+}
+.borderPageColor3{
+	border:2px solid #FFFFFF;
+}
+.borderBlackColor{
+	border:#FFFFFF 2px solid;
+}
+.borderPageColor{
+	border:#333333 2px solid;
+}
+.border0202PageColor{
+	background-color:#506473;
+	border:#333333 2px solid;
+}
+.borderPageColor1{
+	border:4px solid #FFFFFF;
+}
+.borderPageColor2{
+	border:2px solid #000;
+}
+.mainContentBorderColor{
+	border:1px solid #000;
+}
+.buttonBackColor{
+	background-color:#000;
+}
+.fontRedColor
+{
+	color: #FF6699;
+}
+.fontBlueColor
+{
+	color: #7098ff;
+}
+
+.fontDimColor {
+	color:#A4A4A4;
+}
+
+.borderLightBlue
+{
+	border:#99CCFF 2px solid;
+}
+.gray
+{
+color:#CCCCCC;
+}
+.font-normal{
+	font-weight:200;
+}
+
+.font-bold{
+	font-weight:bold;
+}
+
+.font-bolder{
+	font-weight:bolder;
+}
+	
+.font-bSize{
+	font-size:17px;
+}
+
+.font-nSize{
+	font-size:14px;
+}
+
+.font-sSize{
+	font-size:12px;
+}	
+
+.disableBackgroundColor{
+	background-color:#999;
+}
+
+.borderAsWordBackColor{
+	border-color: #333333;
+}
+.borderAsPageBackColor{
+	border-color: #506473;
+}
+.borderColor3{
+	border-color: #FFF;
+}
+/*Add For 02-02-00*/
+.singleline {
+	border-bottom:solid 1px #333333;
+}
+.singleline1 {
+	border-bottom:solid 4px #333333;
+}
+
+#WhollyBackground{
+}
+
+#C-Mainbody {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:720px;
+	height:480px; 
+	background-color:#000033; /*透過色*/
+
+}
+#blankRightBackground{
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:540px;
+	height:480px; 
+	background-color:#000033; /*透過色*/
+
+}
+
+#RightBackground {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:720px;
+	height:480px; 
+	background-color:#000033; /*透過色*/
+
+}
+
+#MenuBackground{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:180px;
+	height:480px;
+	background-color:#000033; /*透過色*/
+
+}
+
+#coverLayer {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:720px; /*modified by Freya 11.07.21(700->720)*/
+	height:480px;
+	background-color:#506473;
+	z-index:3;
+}
+/* globle element css defination for focus behavior*/
+
+/* sorted by hdu @ 20110425 */
+
+/* a */
+
+a{
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+a:focus{
+	border-width:0px;
+	outline-color:#FFA011;
+	outline-style:solid;
+	outline-width:2px;
+}
+
+input{
+	height:19px;
+}
+
+fieldset:focus {
+	outline-width:0px;
+	border-color:#FFA011;
+	border-width:2px;
+	border-style:solid;
+}
+
+/* radio */
+
+input[type=radio]{
+	margin:0px;
+}
+/* checkBox*/
+
+input[type=checkbox]{
+	margin:0px;
+}
+/* text */
+
+input[type=text],input[type=password]{
+	border-width:2px;
+}
+
+input[type=text]:focus,input[type=password]:focus{
+	border-width:2px;
+	outline-color:#FFA011;
+	outline-style:solid;
+	outline-width:2px;
+}
+
+/* checkbox & radiobox */
+
+input[type=checkbox]:focus,input[type=radio]:focus{
+	border-width:0px;
+	outline-color:#FFA011;
+	outline-style:solid;
+	outline-width:2px;
+}
+
+/* select */
+
+select{
+	text-align:center;
+}
+
+select:focus{
+	outline-width:2px;
+	outline-color:#FFA011;
+	outline-style:solid;
+}
+
+/*button*/
+
+input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button {
+	border-width: 2px;
+	border-style: outset;
+}
+
+input[type="button"]:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="file"]::-webkit-file-upload-button, button:focus {
+	border-width: 2px;
+	border-style:outset;
+	outline-color: #FFA011;
+	outline-style: solid;
+	outline-width: 2px;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, input[type="file"]::-webkit-file-upload-button, button:hover {
+	border-width: 2px;
+	border-style:outset;
+}
+
+input[type="button"]:active, input[type="submit"]:active, input[type="reset"]:active, input[type="file"]::-webkit-file-upload-button, button:active {
+	border-width: 2px;
+	border-style:outset;
+}
+
+#ATField {
+	width:720px; /*modified by Freya 11.07.21(700->720)*/
+	height:480px;
+	background:transparent;
+	z-index:100;
+	display:none;
+}
+
+#ATFieldHint {
+	position:absolute;
+	top:240px;
+	left:300px;
+	background:#F00;
+}
+
+.divTmpForFocus{/*djwan @20110609*/
+	width:1px;
+	height:1px;
+	left:76px;
+	bottom:26px;	
+	
+}
+
+/***************   david 2011.07.08   *************************/
+.lineHeight{
+	height:14px;
+}
+.operCardPosition{
+	position:absolute;
+	bottom:35px;
+	left:10px;	
+}
+
+.operCardPosition_line1{
+	position:relative;
+}
+
+.operCardPosition_line2{
+	position:relative;
+	left:86px;	
+}
+.buttonPosition_four{
+	position:absolute;
+	right:542px;
+	bottom:5px;	
+}
+.buttonPosition_first{
+	position:absolute;
+	right:368px;
+	bottom:5px;	
+}
+
+.buttonPosition_left{
+	position:absolute;
+	right:194px;
+	bottom:5px;	
+}
+
+.buttonPosition_right{
+	position:absolute;
+	right:20px;
+	bottom:5px;	
+}
+
+.button_bottomSize{
+	bottom:5px;
+}
+
+.camer_selectWidth{
+	width:236px;
+}
+.fourButtonPosition4{
+	position:absolute;
+	right:542px;
+	bottom:5px;	
+}
+
+.fourButtonPosition3{
+	position:absolute;
+	right:368px;
+	bottom:5px;	
+}
+
+.fourButtonPosition2{
+	position:absolute;
+	right:194px;
+	bottom:5px;	
+}
+
+.fourButtonPosition1{
+	position:absolute;
+	right:20px;
+	bottom:5px;	
+}
+
+.font_Rg {
+	font-family:"RgHeiseiMG-W4" !important;
+}
+
+
+

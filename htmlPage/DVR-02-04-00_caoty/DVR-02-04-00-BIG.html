@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:spry="http://ns.adobe.com/spry">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=euc-jp" />
+<title>NVRコントローラ　Web設定画面</title>
+<link href="../DVR-99/DVR-99-00-00.css" rel="stylesheet" type="text/css" />
+<link href="" rel="stylesheet" type="text/css" id="DVR-99-02-01css"/>
+<link href="" rel="stylesheet" type="text/css" id="DVR-02-04-00css">
+<script src="../SpryAssets/SpryUtils.js" type="text/javascript"></script>
+<script src="../SpryAssets/xpath.js" type="text/javascript"></script>
+<script src="../SpryAssets/SpryData.js" type="text/javascript"></script>
+<script src="../SpryAssets/SpryURLUtils.js" type="text/javascript"></script>
+<script src="../DVR-99/DVR-99.js" type="text/javascript"></script>
+<script src="../DVR-99/DVR-99-00-00.js" type="text/javascript"></script>
+<script src="../DVR-99/DVR-99-99-01.js" type="text/javascript"></script>
+<script src="../DVR-99/DVR-99-02-01.js" type="text/javascript"></script>
+<script src="../DVR-99/DVR-99-99-02.js" type="text/javascript"></script>
+<script src="DVR-02-04-00.js" type="text/javascript"></script>
+</head>
+
+<body onload="dispDrawStop();init();clickBody();" onkeydown="closeBackHome('cancel',0);revive_focus();keyToMouse()">
+<div id="WhollyBackground">
+<div id="C-Mainbody" style="display:none";>
+		<div id="C-MainsideRight">
+ 			<div id="mainContent" class="SpryHiddenRegion">
+				<form id="DVR-02-04-00-form" name="DVR-02-04-00-form" method="post">
+<!-- ######業務部分###開始#################################################################S###### -->
+<!-- システム時間表示-->
+<div class="div_set1 wordBackColor">
+	<table class="DVR-02-04-table-01" border="0" cellspacing="0" cellpadding="1">
+	  <tr class="DVR-02-04-00-tr-01">
+	    <td class="pageBackColor" colspan="2">
+	      <div class="C101 pageBackColor">時刻設定</div>
+            	<table border="0" cellpadding="0" cellspacing="0" >
+                    <tr>
+                        <td class="C103 " align="left" style="border:none;"></td>
+                    	<td class="C102 " align="left" style="border:none;" valign="middle">
+                        <select tabindex="1" name="DVR-02-04-01-01" id="DVR-02-04-01-01" class="select4" onchange="getDateInfo(1)" onkeydown="closeBackHome('cancel',0);changeFocus(this);" onmousedown="setfocus_click(this)" >
+                        </select>年
+                        <select tabindex="2" name="DVR-02-04-01-02" id="DVR-02-04-01-02" class="select2" onchange="getDateInfo(2)" onkeydown="closeBackHome('cancel',0);changeFocus(this);" onmousedown="setfocus_click(this)" >
+                        </select>月
+
+
+
+
+                        <select tabindex="3" name="DVR-02-04-01-03" id="DVR-02-04-01-03" class="select2" onchange="getDateInfo(3)" onkeydown="closeBackHome('cancel',0);changeFocus(this);" onmousedown="setfocus_click(this)" >
+                        </select>日
+
+
+
+
+	                    </td>
+                        <td class="C103 borderAsPageBackColor" align="center" style="border:none;" id="weekday"></td>    
+                        <td class="C104 borderAsPageBackColor" align="center" style="border:none;" valign="middle">
+                        <select tabindex="4" name="DVR-02-04-01-04" id="DVR-02-04-01-04" class="select2" onkeydown="closeBackHome('cancel',0);changeFocus(this);" onmousedown="setfocus_click(this)" >
+                        </select>時
+                        <select tabindex="5" name="DVR-02-04-01-05" id="DVR-02-04-01-05" class="select2" onkeydown="closeBackHome('cancel',0);changeFocus(this);" onmousedown="setfocus_click(this)" >
+                        </select>分
+                        <select tabindex="6" name="DVR-02-04-01-06" id="DVR-02-04-01-06" class="select2"  onkeydown="closeBackHome('cancel',0);changeFocus(this);" onmousedown="setfocus_click(this)" >
+                        </select>秒
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+		<tr class="DVR-02-04-00-tr-01">
+		    <td class="C105 pageBackColor" align="center" valign="middle">時刻スタート</td>
+		    <td class="pageBackColor" valign="middle" style="padding-left:10px;">
+                <input type="button" name="setting" id="setting" value="適用" class="big-button" onclick="javascript:addset();" tabindex="7" onkeydown="closeBackHome('cancel',0);changeFocus(this);" onmousedown="setfocus_click(this)"/>
+            </td>
+        </tr>
+	</table>
+</div>
+<br />
+<div class="div_set2 wordBackColor">   
+<table class="DVR-02-04-table-02" border="0" cellspacing="0" cellpadding="0">
+    <tr class="DVR-02-04-00-tr-01">
+        <td class="C201 pageBackColor" align="center" valign="middle">電源同期</td>
+        <td class="C202 pageBackColor" align="left" valign="middle">
+           <div id="dengen" tabindex="8" onkeydown="closeBackHome('cancel',0);changeFocus(this);" class="FocusDiv">
+            <table style="width:100%; height:100%; border-spacing:0px;" border="0" cellpadding="0" cellspacing="0">
+             <tr>
+              <td class="tdWidth"></td>
+              <td valign="middle">
+               <input tabindex="-1" type="radio" name="DVR-02-04-00-04" id="DVR-02-04-00-04-2" value="0" onmousedown="setfocus_click(this)" onclick="clickRadio(this);periodNTP()" />
+              </td>
+              <td class="RadioWord" valign="middle" id="DVR-02-04-00-04-2-td">無</td>
+              <td class="tdWidth"></td>
+              <td valign="middle">
+               <input tabindex="-1" type="radio" name="DVR-02-04-00-04" id="DVR-02-04-00-04-1" value="1" onmousedown="setfocus_click(this)" onclick="clickRadio(this);periodNTP()" checked="checked"/>
+              </td>
+              <td class="RadioWord" valign="middle" id="DVR-02-04-00-04-1-td">有</td>
+              <td  class="tdWidth"></td>
+             </tr>
+            </table>
+           </div>
+        </td>
+    </tr>
+</table>
+</div>
+<br />
+<div class="div_set3 wordBackColor">   
+    <table class="DVR-02-04-table-03" border="0" cellspacing="0" cellpadding="1">
+		<tr class="DVR-02-04-00-tr-01">
+		  <!--  <td class="C301 border0202PageColor" align="center">NTP設定</td> -->
+            <td class="C301 pageBackColor" align="center" valign="middle">NTP同期</td>
+            <td class="C302 pageBackColor" align="left" valign="middle">
+              <div id="ntpset" tabindex="9" onkeydown="closeBackHome('cancel',0);changeFocus(this);" class="FocusDiv">
+                <table style="width:100%; height:100%; border-spacing:0px;" border="0" cellpadding="0" cellspacing="0">
+                 <tr>
+                  <td  class="tdWidth1"></td>
+                  <td valign="middle">
+                   <input tabindex="-1" type="radio" name="DVR-02-04-00-05" id="DVR-02-04-00-05-2" value="0" onclick="javascript:docheck2();clickRadio(this);periodNTP()" onmousedown="setfocus_click(this)"/>
+                  </td>
+                  <td class="RadioWord" valign="middle" id="DVR-02-04-00-05-1-td">無</td>
+                  <td  class="tdWidth1"></td>
+                  <td valign="middle">
+                   <input tabindex="-1" type="radio" name="DVR-02-04-00-05" id="DVR-02-04-00-05-1" value="1" checked="checked" onclick="javascript:docheck1();clickRadio(this);periodNTP()" onmousedown="setfocus_click(this)"/>
+                  </td>
+                  <td class="RadioWord" valign="middle" id="DVR-02-04-00-05-2-td">有</td>
+                  <td class="tdWidth1"></td>
+                 </tr>
+                </table>
+              </div>
+            </td>
+        </tr>
+        <tr class="DVR-02-04-00-tr-01">
+            <!-- 共通ルール対応 長音記号 2011.10.21 -->
+		    <!-- <td class="wordBackColor" align="center" valign="middle">NTPサーバアドレス</td> -->
+		    <td class="pageBackColor" align="center" valign="middle">NTP<br>サーバーアドレス</td>
+            <td class="pageBackColor" align="left" style="padding-left:10px;" valign="middle">
+            <input type="text" sipmode="2" class="textaddr" name="DVR-02-04-00-06" id="DVR-02-04-00-06" value="" maxlength="40" tabindex="10" onkeydown="closeBackHome('cancel',0);changeFocus(this);return inputTextArea(this);" onmousedown="setfocus_click(this)" />
+            </td>
+        </tr>
+        <tr class="DVR-02-04-00-tr-01">
+		    <td class="pageBackColor" align="center" valign="middle">同期時刻</td>
+            <td class="pageBackColor" align="left" style="padding-left:10px;" valign="middle">
+                <select tabindex="11" name="DVR-02-04-00-07" id="DVR-02-04-00-07" class="select2" onkeydown="closeBackHome('cancel',0);changeFocus(this);" onmousedown="setfocus_click(this)"></select>&nbsp;時 
+                <select tabindex="12" name="DVR-02-04-00-08" id="DVR-02-04-00-08" class="select2" onkeydown="closeBackHome('cancel',0);changeFocus(this);" onmousedown="setfocus_click(this)"></select>&nbsp;分 
+            </td>
+        </tr>
+	</table>
+</div>	 
+    </form>
+    <form id="DVR-02-04-00-tmpform" name="DVR-02-04-00-tmpform" method="post">
+    </form>
+<!-- ######ヘルプ領域###`################################################################E###### -->
+<!--<div class="info_frame">
+<div>操作ガイド：［電源同期］電源に同期し時刻のずれを少なくします。</div>
+<div style="margin-left:103px;">［時刻設定］手動で調時を行います。［NTP設定］毎日正しい時刻を取得します。</div>
+</div>-->
+<!-- ######業務部分###終了###############################################################E###### -->
+<!-- ######ボタン領域####################################################################E###### -->
+<!--<div class="button_frame">
+<div class="button_box">
+<span>
+<input tabindex="13" type="button" name="decide" id="decide" value="確定" class="big-button" onclick="javascript:doConnect();" onkeydown="closeBackHome('cancel',0);changeFocus(this);"/>
+</span>
+<span style="marging-left:10px;display:inline-block;"></span>
+<span>
+<input tabindex="14" type="button" name="cancel" id="cancel" value="取消" class="big-button" onclick="javascript:doCancel();" onkeydown="closeBackHome('cancel',0);changeFocus(this);"/>
+</span>
+</div>
+</div>-->
+			</div>
+			<br class="clearfloat" />
+            <div class="operCardPosition">
+                <div class="operCardPosition_line1">
+                    <span>操作ガイド：［電源同期］電源に同期し時刻のずれを少なくします。</span> 
+                </div>
+                <div class="operCardPosition_line2">
+                    <span>［時刻設定］手動で調時を行います。［NTP設定］毎日正しい時刻を取得します。</span> 
+                </div>
+            </div>
+            <div class="buttonPosition_left">
+                <input tabindex="13" type="button" name="decide" id="decide" value="確定" class="big-button" onclick="javascript:doConnect();" onkeydown="closeBackHome('cancel',0);changeFocus(this);" onmousedown="setfocus_click(this)"/>
+            </div>
+            <div class="buttonPosition_right">
+                <input tabindex="14" type="button" name="cancel" id="cancel" value="取消" class="big-button" onclick="backhome();" onkeydown="closeBackHome('cancel',0);changeFocus(this);" onmousedown="setfocus_click(this)"/>
+            </div>
+		</div>
+ </div>
+<!--<div id="DVR_popUp"></div>
+<div id="DVR"></div>-->
+</div>
+</body>
+</html>
